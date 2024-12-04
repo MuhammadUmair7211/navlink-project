@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="main mt-5">
+      <div className="main px-4 py-2">
         <Outlet />
       </div>
     </>

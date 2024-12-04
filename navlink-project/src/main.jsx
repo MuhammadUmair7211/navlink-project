@@ -5,7 +5,7 @@ import Contact from "./assets/components/Contact.jsx";
 import Home from "./assets/components/Home.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./assets/components/About.jsx";
-import Signin from "./assets/components/Signin.jsx";
+import Modal from "./assets/components/Modal.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,10 +22,6 @@ const router = createBrowserRouter([
       {
         path: "/Contact",
         element: <Contact />,
-      },
-      {
-        path: "/Signin",
-        element: <Signin />,
       },
     ],
   },
