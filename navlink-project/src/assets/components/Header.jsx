@@ -1,5 +1,5 @@
 import React from "react";
-import { isCookie, NavLink } from "react-router-dom";
+import { isCookie, Link, NavLink } from "react-router-dom";
 import Modal from "./Modal";
 import { useState } from "react";
 function Header() {
@@ -45,14 +45,15 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <button
-              className="btn btn-primary btn-outline-none"
+            <a
+              href="#"
+              className="text-decoration-none"
               onClick={() => {
                 setIsOpen(true);
               }}
             >
               Sign In
-            </button>
+            </a>
             <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
           </li>
         </ul>
