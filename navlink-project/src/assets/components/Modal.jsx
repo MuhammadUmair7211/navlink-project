@@ -4,12 +4,10 @@ import { createPortal } from "react-dom";
 function Modal({ isOpen, setIsOpen }) {
   return createPortal(
     <div
-      className={`container w-50 border bg-light shadow ${
-        isOpen ? "" : "d-none"
-      }`}
+      className={`container border bg-light shadow ${isOpen ? "" : "d-none"}`}
     >
       <h4 className="text-center mt-5 text-muted">Sign In</h4>
-      <div className="row  px-3 py-3">
+      <div className="row px-3 py-3">
         <div className="col-md-6">
           <input
             type="text"
@@ -24,7 +22,7 @@ function Modal({ isOpen, setIsOpen }) {
             className="form-control"
           />
         </div>
-        <div className="button mt-4 text-end">
+        <div className="text-center mt-4">
           <button
             className="btn btn-primary"
             onClick={() => {
