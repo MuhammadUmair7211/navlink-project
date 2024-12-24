@@ -1,5 +1,4 @@
-import React from "react";
-import { isCookie, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Modal from "./Modal";
 import { useState } from "react";
 function Header() {
